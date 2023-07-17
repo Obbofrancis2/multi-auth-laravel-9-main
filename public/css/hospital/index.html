@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Services</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .swal2-title {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <button id="addServiceButton" class="btn btn-primary">Add Service</button>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        document.getElementById('addServiceButton').addEventListener('click', function() {
+    Swal.fire({
+        title: 'Add Service',
+        html:
+            '<form id="addServiceForm">' +
+                '<label for="serviceName">Service Name</label>' +
+                        '<input type="text" id="serviceName" name="servicename" class="swal2-input" placeholder="Enter service name">' +
+
+                        '<label for="serviceType">Service Type</label>' +
+                        '<select required name="servicetype"><option value="1">Special</option><option value="2">Normal</option></select>' +
+
+                        '<label for="serviceCost">Service Cost</label>' +
+                        '<input type="text" id="sserviceprice" name="serviceCost" class="swal2-input" placeholder="Enter service cost (UGX)">' +
+
+                        '<label for="startDate">Start Date</label>' +
+                        '<input type="date" id="startdate" name="startDate" class="swal2-input">' +
+
+                        '<label for="endDate">End Date</label>' +
+                        '<input type="date" id="enddate" name="endDate" class="swal2-input">' +
+                // Other form fields...
+                '<P><button type="submit" id="submitFormButton" class="btn btn-primary" class="btn btn-success" style="background-color:rgba(32, 137, 132, 1);">Submit</button></p>' +
+            '</form>',
+        showCancelButton: true,
+        cancelButtonText: 'Cancel',
+        showLoaderOnConfirm: true,
+        preConfirm: function () {
+            return new Promise(function (resolve) {
+                var formData = new FormData();
+                formData.append('serviceName', document.getElementById('serviceName').value);
+                // Append other form fields to formData...
+
+                // Send the AJAX request
+                var xhr = new XMLHttpRequest();
+                xhr.open('POST', '/addservices'); // Replace with your actual controller route
+                xhr.setRequestHeader('X-CSRF-TOKEN', '{{ csrf_token() }}'); // Add CSRF token if required
+                xhr.onload = function () {
+                    if (xhr.status === 200) {
+                        var response = JSON.parse(xhr.responseText);
+                        resolve(response);
+                    } else {
+                        resolve(false);
+                    }
+                };
+                xhr.send(formData);
+            });
+        }
+    }).then(function (result) {
+        if (result.isConfirmed) {
+            // Show success message or perform other actions
+            Swal.fire('Service Added', 'Service successfully added!', 'success');
+        }
+    });
+});
+
+    </script>
+</body>
+</html>

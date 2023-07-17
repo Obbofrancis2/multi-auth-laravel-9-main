@@ -1,0 +1,152 @@
+body {
+  background: linear-gradient(to right, rgba(32, 137, 132, 1) 0%, rgba(32, 137, 132, 1) 5%, rgba(109,196,156,1) 5%,
+  rgba(109,196,156,1) 10%, rgb(255, 255, 255) 10%, white 90%, rgba(109,196,156,1) 90%,
+  rgba(109,196,156,1) 95%, rgba(32, 137, 132, 1) 95%, rgba(32, 137, 132, 1) 100%);
+}
+
+/* nav element containing the menu*/
+.bg-light {
+  width: 60%;
+  margin-left: 20%;
+  margin-top: 20px;
+}
+/*adding style to the search button*/
+.input-group-append {
+  background-color: rgba(109,196,156,1) ;
+}
+
+ .logo {
+  margin-left: 100px;
+  width: 100px;
+}
+/* centering the menu*/
+.justify-content-center ul li {
+  background-color: rgba(32, 137, 132, 1);
+  border-radius: 10px;
+  margin: 10px;
+}
+.justify-content-center ul li a {
+  color: white;
+}
+
+.navbar {
+  background-color: rgb(240, 245, 245); /* Replace with your desired green color */
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+.card {
+  margin-bottom: 20px;
+}
+
+
+
+
+.conntainer{
+  align-content: center;
+}
+.special, .news {
+  height: 150px;
+  background: rgba(245, 245, 245, 1);
+  border: 1px solid rgba(109, 196, 156, 1);
+  border-radius: 26px;
+  overflow: hidden;
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 100px;
+  justify-content: center;
+}
+.head {
+  color: rgba(32, 137, 132, 1);
+  font-family: Quicksand;
+  font-weight: 600;
+  font-size: 20px;
+  opacity: 1;
+  width: 40%;
+  height: 25px;
+  border: 1px solid rgba(109, 196, 156, 1);
+  border-radius: 26px;
+  align-content: center;
+  justify-content: center;
+}
+
+.btn {
+  background-color:rgba(32, 137, 132, 1);
+  margin-top: 30%;
+  justify-self: center;
+  color: white;
+  width: 200px;
+  font-weight: 600;
+  margin-right: 80px;
+}
+
+/* POPUP */
+ /* Styling for the overlay */
+ .overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 9999;
+}
+
+/* Styling for the popup */
+.popup {
+    color: rgba(32, 137, 132, 1);
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  z-index: 10000;
+  width: 90%;
+  max-width: 500px;
+  font-weight: bolder;
+}
+.popup button {
+    background-color: rgba(32, 137, 132, 1) ;
+    color: white;
+}
+
+.popup table{
+  margin-top: 40px;
+}
+.popup td input{
+    border-color: rgba(32, 137, 132, 1) ;
+}
+
+.popup textarea {
+    border-color: rgba(32, 137, 132, 1) ;
+}
+
+.popup-close {
+color: white;
+background-color:red ;
+border-radius: 10px;
+width: 20px;
+height: 20px;
+display: inline-block;
+  text-align: center;
+  align-items: center;
+}
+/* Styling for the close button */
+.popup-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+/* @media (min-width: 768px)  */
+
+

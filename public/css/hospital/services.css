@@ -1,0 +1,206 @@
+CSS
+/* CSS for the navigation bar */
+
+.header-container {
+ text-align: center;
+ background-color: #808080;
+margin: 0;
+padding: 0;
+height: 70px;
+display: flex;
+align-items: center;
+justify-content: center;
+position: fixed;
+top: 0;
+left: 200px;
+width: 90%;
+}
+.h2 {
+display: flex;
+align-items: center;
+justify-content: center;
+height: 300px; 
+text-align: center;
+background-color: #2F8AB1;
+margin-left: 220px; 
+margin-right: 50px;
+margin-top: 150px;
+margin-bottom: 10px;
+color: white;
+height: 50px;
+
+}
+
+/* CSS for the navigation bar */
+.nav {
+width: 20%;
+background-color: rgb(212, 215, 212);
+height: 900px;
+position: fixed;
+left: 0;
+top: 0;
+margin-top: 0;
+}
+
+.nav ul {
+list-style-type: none;
+padding: 0;
+margin-top: 10px;
+}
+
+.nav li {
+padding: 20px;
+width: auto;
+height: 50px;
+background-color: rgba(32, 137, 132, 1);
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.nav li a {
+text-decoration: none;
+color: white;
+align-items: center;
+height:50px;
+
+}
+
+.nav li a:hover {
+/* background-color: rgb(3, 100, 37); */
+text-align: center;
+
+}
+
+/* CSS for the table */
+.table-container {
+margin-left: 220px; /* Adjust this value as needed */
+margin-right: 50px;
+padding: 20px;
+margin-top: 50px; /* Add this line to create space below the navigation bar */
+background-color: gray; 
+Width: 1017;
+height: 625px;
+margin-top: 15px;
+top: 277px;
+left: 357px; 
+}
+
+table {
+/*border-collapse: collapse; */
+width: 100%;
+border: 1px solid gray;
+}
+
+th, td.data {
+background-color: lightblue;
+padding: 8px;
+text-align: left;
+/*border-bottom: 1px solid #ddd;*/
+height: 50px;
+
+}
+.add-student-container {
+text-align: left;
+/* margin-top: 20px; */
+margin-bottom: 20px;
+padding: 5px 10px;
+}
+
+.add-button {
+display: inline-block;
+padding: 5px 10px;
+background-color: green;
+border-radius: 10px;
+cursor: pointer;
+margin-right: 5px;
+text-decoration: none;
+}
+
+.pagination {
+text-align: right;
+}
+
+.pagination a {
+display: inline-block;
+padding: 5px 10px;
+text-decoration: none;
+color: white;
+margin-left: 5px;
+}
+
+.pagination a.active {
+background-color: #f2f2f2;
+}
+
+.search-container {
+text-align: right;
+margin-top: 20px;
+}
+
+.search-container input[type="text"] {
+padding: 5px;
+width: 200px;
+}
+
+.search-container input[type="submit"] {
+padding: 5px 10px;
+}
+
+.image-container {
+ margin-top: 0;
+display: grid;
+grid-template-columns: auto; 
+row-gap: 10px; 
+height: 200px;
+}
+
+img {
+grid-row: 1; 
+height: 150px;
+margin-top: 20px;
+display: block; 
+ margin: 0 auto;}
+
+.image-caption {
+grid-row: 2; /* Places the text in the second row */
+font-size: 30px;
+margin-top: 0;
+color: white;
+text-align: center;
+top: 0px;
+}
+
+.head {
+text-align: center;
+color: white;
+}
+
+.ccc {
+margin: 0px;
+
+}
+#xyz{
+text-align: right;
+
+}
+#xyy{
+ text-align: left;
+
+}
+.icon1{
+margin-left: 550px;
+ }
+
+ .icon2{
+margin-right: 650px;
+}
+
+
+body { width:100%;
+    background: linear-gradient(to right, rgba(32, 137, 132, 1) 0%, rgba(32, 137, 132, 1) 5%, rgba(109,196,156,1) 5%,
+    rgba(109,196,156,1) 10%, rgb(255, 255, 255) 10%, white 90%, rgba(109,196,156,1) 90%,
+    rgba(109,196,156,1) 95%, rgba(32, 137, 132, 1) 95%, rgba(32, 137, 132, 1) 100%);
+    background-repeat: no-repeat;
+  }
+  
+  
